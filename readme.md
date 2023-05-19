@@ -1,6 +1,9 @@
 ## REDUX ÖRNEĞİ:
 
-Primary Sayfasından veri ekleyip Eklenen verileri Secondary Sayfasında görüntülme:
+
+Mevcut Bir Yapıya Redux Entegrasyonu
+
+
 
 
 

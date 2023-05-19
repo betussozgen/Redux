@@ -23,7 +23,7 @@ function Primary() {
     }
     return (
         <View>
-            <Text style={{ fontSize: 30 }}>PRIMARY</Text>
+            {/* <Text style={{ fontSize: 30 }}>PRIMARY</Text> */}
             <View style={style}>
                 <TextInput
                     value={text}

@@ -8,7 +8,7 @@ function Secondary() {
     const myUserName = useSelector(s => s.userName)
     return (
         <View>
-            <Text style={{ fontSize: 30 }}>Secondary</Text>
+            {/* <Text style={{ fontSize: 30 }}>Secondary</Text> */}
             <Text style={{ fontSize: 30 }}>UserName: {myUserName}</Text>
             <FlatList
                 keyExtractor={(_, index) => index.toString()}

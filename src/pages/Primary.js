@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Text, View, TextInput, Button } from 'react-native';
 
+//reducewr'ları tektiklemem lazım. Reducerlara erişim sağlıyorum.
+import { useDispatch } from 'react-redux';
+
 function Primary() {
     const [text, setText] = useState('');
+    const dispatch = useDispatch();
 
     const handleAdd = () => {
-        console.log(text);
+        dispatch({ type: 'ADD_NAME', payload: { name: text } })
     };
     return (
         <View>

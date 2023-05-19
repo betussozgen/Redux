@@ -7,6 +7,9 @@ export default function (state, action) {
             const newList = [...state.nameList, name]
             return { ...state, nameList: newList }
 
+        case "CLEAN_LIST":
+            return { ...state, nameList: [] }
+
         default:
             return state;
     }

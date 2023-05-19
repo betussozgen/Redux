@@ -11,6 +11,10 @@ function Primary() {
     const handleAdd = () => {
         dispatch({ type: 'ADD_NAME', payload: { name: text } })
     };
+
+    const handleClean = () => {
+        dispatch({ type: 'CLEAN_LIST' })
+    };
     return (
         <View>
             <Text style={{ fontSize: 30 }}>PRIMARY</Text>
@@ -28,6 +32,10 @@ function Primary() {
             <Button
                 title='Ekle'
                 onPress={handleAdd} />
+            <Button
+                title='Temizle'
+                onPress={handleClean} />
+
         </View>
     )
 

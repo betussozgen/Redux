@@ -10,6 +10,10 @@ export default function (state, action) {
         case "CLEAN_LIST":
             return { ...state, nameList: [] }
 
+        case "SET_USERNAME":
+            return { ...state, userName: action.payload.userName }
+
+
         default:
             return state;
     }

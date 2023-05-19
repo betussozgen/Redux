@@ -7,11 +7,11 @@ import { createStore } from "redux";
 import reducers from './reducers';
 import initialState from './Store'
 
-const UserProvider = ({ childeren }) => {
+const UserProvider = ({ children }) => {
 
     const store = createStore(reducers, initialState);
 
-    return <Provider store={store}>{childeren}</Provider>
+    return <Provider store={store}>{children}</Provider>
 }
 
 
